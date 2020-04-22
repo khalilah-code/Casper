@@ -1,0 +1,143 @@
+/* Key Colors */
+/* off white rgb(244,244,244) */
+/* weird bluergb(206,231,245) */
+/* purple rgb(1,21,107) */
+
+/* Excaliber Drawing */
+/* https://excalidraw.com/#room=ce52929612f6931e7e15,r7jUfq4DLWufEoJK98SGxw */
+
+/* Casper Homepage Picture */
+/* https://learndotresources.s3.amazonaws.com/workshop/59b2d5c764d22d00044a07f6/casper.png */
+
+
+/* --------------
+UTILITIES
+---------------- */
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    color: rgb(62, 62, 62)
+}
+/* body{ height: 100vh;} */
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+h2{
+    margin: 0;
+    color: rgb(1,21,107);
+}
+/* h3{} */
+p{font-size: 1rem;} 
+button{
+    height: 2.5rem;
+    width: 10rem;
+    text-transform: uppercase;
+    font-weight:900;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px 4px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+li{ margin: 0 1rem}
+section{
+    height: 95vh;
+    padding: 7% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* --------------
+Header
+---------------- */
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+.half-head{
+    width:50%;
+    display: flex;
+
+}
+.half-head:nth-child(2){
+    justify-content: flex-end;
+}
+
+
+/* --------------
+Landing Section
+---------------- */
+#home{
+    background-image: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0,0.2)),url("http://placekitten.com/1000/1000");
+    background-size: cover;
+}
+#home > p{
+    margin-bottom: 3em;
+    font-weight: 700;
+    color:white;
+}
+
+#home > button{ color: navy;}
+
+
+/* --------------
+Featured Production
+---------------- */
+#featured-products{
+    /* height needs to be at least 110vh, so that at certain breakpoints the third accessory card is viewable and so the botom button isn't squished
+    anny way to circumvent this necessity? */
+    height: 110vh;
+    background-color: rgb(244,244,244);
+}
+.shop-btn{
+    width: 7rem;
+}
+
+#mattresses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;;
+}
+#new{
+    line-height: 1rem;
+    color: rgb(134,184,222)
+}
+#accessories{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.casper-card,
+.accessory-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.casper-card p{width:60%}
+
+.accessory-card{
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+    background-color: white;
+    width: 20%;
+}
+.accessory-card:nth-child(2){
+    margin: 0 20px;
+}
